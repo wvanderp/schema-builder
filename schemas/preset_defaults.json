@@ -1,4 +1,5 @@
 {
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Default presets",
     "description": "Directory of the IDs of the presets or categories to be shown in the default list for each geometry type.",
     "type": "object",

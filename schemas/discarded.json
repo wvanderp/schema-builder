@@ -1,4 +1,5 @@
 {
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Discarded tags",
     "description": "Keys of tags to be deleted when editing features.",
     "type": "object",

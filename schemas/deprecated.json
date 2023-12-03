@@ -1,4 +1,5 @@
 {
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Deprecated tags",
     "description": "An ordered list of old tags mapped to new tags.",
     "type": "array",
@@ -9,8 +10,7 @@
                 "type": "object",
                 "additionalProperties": {
                     "type": "string"
-                },
-                "required": true
+                }
             },
             "replace": {
                 "type": "object",
@@ -19,6 +19,9 @@
                 }
             }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "required": [
+            "old"
+        ]
     }
 }

@@ -1,17 +1,16 @@
 {
+    "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Preset category",
     "description": "An ordered grouping of presets",
     "type": "object",
     "properties": {
         "name": {
             "description": "The title of this category in US English",
-            "type": "string",
-            "required": true
+            "type": "string"
         },
         "icon": {
             "description": "Name of preset icon which represents this preset",
-            "type": "string",
-            "required": true
+            "type": "string"
         },
         "members": {
             "description": "The IDs of the presets in this category",
@@ -20,9 +19,13 @@
             "uniqueItems": true,
             "items": {
                 "type": "string"
-            },
-            "required": true
+            }
         }
     },
-    "additionalProperties": false
+    "additionalProperties": false,
+    "required": [
+        "name",
+        "icon",
+        "members"
+    ]
 }
